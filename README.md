@@ -52,10 +52,10 @@
 
 ## Data Ingestion in database
 
-- Using models from above file, [models_data.py](models_data.py) ingests data into SQLite DB.
+- Using models from above file, [models_data.py](site_app/models_data.py) ingests data into SQLite DB.
 - Made a list for all_objects and then used bulk_create method to add all the objects at once in the DB for a specific model.
 - Before running the command you need to mention the directory path of weather and yield files using environment variable in
-  [models_data.py](models_data.py) file. For [setting Environment variables](https://docs.oracle.com/en/database/oracle/machine-learning/oml4r/1.5.1/oread/creating-and-modifying-environment-variables-on-windows.html)
+  [models_data.py](site_app/models_data.py) file. For [setting Environment variables](https://docs.oracle.com/en/database/oracle/machine-learning/oml4r/1.5.1/oread/creating-and-modifying-environment-variables-on-windows.html)
 
   And please do mention the correct file path or it will throw an error which you can see in log file. To run the file to ingest data in tables we can use the following command
 
@@ -92,26 +92,26 @@ Implemented 3 endpoints that return JSON
 
 ## File layout
 
-- [models_data.py](models_data.py) - script responsible for populating Weather ,Yield and Results data sets.
+- [models_data.py](site_app/models_data.py) - script responsible for populating Weather ,Yield and Results data sets.
   While populating Results, it takes the Weather stats table and in `ResultsData` funtion it splits the average minimum, maximum temperatures and total precipitation data and stores it in `Results` table.
 
-- [views.py](views.py) - This has all the API View classes which have inherited django backend filters
+- [views.py](site_app/views.py) - This has all the API View classes which have inherited django backend filters
 
-- [serializers.py](serializers.py) - This file converts the model data into a json format to use in the API view format
+- [serializers.py](site_app/serializers.py) - This file converts the model data into a json format to use in the API view format
 
-- [urls.py](urls.py) - In this have used routers for the routing of the view functions
+- [urls.py](site_app/urls.py) - In this have used routers for the routing of the view functions
 
   - `/api/weather`
   - `/api/weather/stats`
   - `/api/yield`
 
-- [models.py](.py) - Contains code related to initial setup of SQLite DB
+- [models.py](site_app/models.py) - Contains code related to initial setup of SQLite DB
 
-- [models.py](models.py) - Contains all the three data models Weather, Results & Yield
+- [models.py](site_app/models.py) - Contains all the three data models Weather, Results & Yield
 
-- [mycommands.py](mycommands.py) - Contains a custom handle funtion to run the models_data.py file funtions for ingestion of the data into DB
+- [mycommands.py](site_app/management/commands/mycommands.py) - Contains a custom handle funtion to run the models_data.py file funtions for ingestion of the data into DB
 
-- [admin.py](admin.py) - This is a default admin file in which have registered all the three models so a user or admin can directly do CRUD
+- [admin.py](site_app/admin.py) - This is a default admin file in which have registered all the three models so a user or admin can directly do CRUD
   operations through admin page
 
 ## Running web service

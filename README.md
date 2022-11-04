@@ -16,7 +16,7 @@
 
 # Setup to run
 
-- Firstly you need to install latest python version from [Python](https://www.python.org/)
+- Firstly you need to install latest python version from [Python](https://www.python.org/){:target="_blank" rel="noopener"}
 - Developed and tested the application on `Win 11` with `Python 3.8.12`
 - Then you need to create a virtual environment
 

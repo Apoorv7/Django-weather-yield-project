@@ -134,7 +134,7 @@ Quit the server with CTRL-BREAK.
 
 ```
 
-## For opening API's you need to surf to the folowwing urls
+## For opening API's you need to surf to the following urls
 
 ```
 - Weather API - http://127.0.0.1:8000//api/weather

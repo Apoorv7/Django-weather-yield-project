@@ -37,7 +37,7 @@
 
 ## Data Modeling
 
-- All the data models `Weather, Results, Yield`can be found in [models.py](models.py)
+- All the data models `Weather, Results, Yield`can be found in [models.py](site_app/models.py)
   These were developed to work with Django ORM and SQLite as the DB.
 
   ```

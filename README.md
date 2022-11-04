@@ -137,9 +137,9 @@ Quit the server with CTRL-BREAK.
 ## For opening API's you need to surf to the folowwing urls
 
 ```
-- `http://127.0.0.1:8000//api/weather`
-- `http://127.0.0.1:8000//api/weather/stats`
-- `http://127.0.0.1:8000//api/yield`
+- Weather API - http://127.0.0.1:8000//api/weather
+- Weather stats API - http://127.0.0.1:8000//api/weather/stats
+- yield API - http://127.0.0.1:8000//api/yield
 ```
 Screenshots of api's in browser can be found in `screenshots` folder.
 

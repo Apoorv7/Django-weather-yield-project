@@ -109,7 +109,7 @@ Implemented 3 endpoints that return JSON
 
 - [models.py](site_app/models.py) - Contains all the three data models Weather, Results & Yield
 
-- [mycommands.py](site_app/management/mycommands.py) - Contains a custom handle funtion to run the models_data.py file funtions for ingestion of the data into DB
+- [mycommands.py](site_app/management/commands/mycommand.py) - Contains a custom handle funtion to run the models_data.py file funtions for ingestion of the data into DB
 
 - [admin.py](site_app/admin.py) - This is a default admin file in which have registered all the three models so a user or admin can directly do CRUD
   operations through admin page

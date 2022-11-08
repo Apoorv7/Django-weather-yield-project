@@ -16,9 +16,10 @@
 
 # Setup to run
 
-- Firstly you need to install latest python version from [Python](https://www.python.org/)
+- Firstly you need to install python from [Python](https://www.python.org/) and vscode from [VScode](https://code.visualstudio.com/)
+- Now you need to clone this repository in your local pc and then open the repository in vscode.
 - Developed and tested the application on `Win 11` with `Python 3.8.12`
-- Then you need to create a virtual environment
+- Open terminal in vscode and Then you need to create a virtual environment
 
   ```
   py -m venv venv
@@ -53,7 +54,8 @@
   python manage.py createsuperuser
   ```
 
-## Data Ingestion in database`(Note: You can run this if you want a new set of data in tables)`
+## Data Ingestion in database
+`(Note: You can run this if you want a new set of data in tables)`
 
 - Using models from above file, [models_data.py](site_app/models_data.py) ingests data into SQLite DB.
 - Made a list for all_objects and then used bulk_create method to add all the objects at once in the DB for a specific model.

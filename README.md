@@ -34,6 +34,9 @@
   ```
   pip install -r requirements.txt
   ```
+  
+- After this you can directly go to `Running web service` para
+
 
 ## Data Modeling
 
@@ -50,7 +53,7 @@
   python manage.py createsuperuser
   ```
 
-## Data Ingestion in database
+## Data Ingestion in database`(Note: You can run this if you want a new set of data in tables)`
 
 - Using models from above file, [models_data.py](site_app/models_data.py) ingests data into SQLite DB.
 - Made a list for all_objects and then used bulk_create method to add all the objects at once in the DB for a specific model.

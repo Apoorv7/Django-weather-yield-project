@@ -23,6 +23,8 @@
 
   ```
   pip install virtualenv
+  ```
+  ```
   py -m venv venv
   ```
 

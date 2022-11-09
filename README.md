@@ -28,7 +28,7 @@
 - Now you will need to activate the virtual environment
 
   ```
-  .\env\Scripts\activate
+  .\venv\Scripts\activate
   ```
 
 - Now go to the project folder using `cd` command and install the dependencies

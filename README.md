@@ -22,6 +22,7 @@
 - Open terminal in vscode and Then you need to create a virtual environment
 
   ```
+  pip install virtualenv
   py -m venv venv
   ```
 
